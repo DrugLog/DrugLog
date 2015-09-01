@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="lolbellum.druglog.StatisticsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Drug Name"
+        android:id="@+id/fragment_statistics_drugname"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_statistics_timespinner"
+        android:layout_below="@+id/fragment_statistics_drugname"
+        android:layout_toStartOf="@+id/fragment_statistics_metricspinner"
+        android:layout_toLeftOf="@+id/fragment_statistics_metricspinner" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_statistics_metricspinner"
+        android:layout_above="@+id/fragment_statistics_usagegrapghbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Usage Graph"
+        android:id="@+id/fragment_statistics_usagegrapghbutton"
+        android:layout_below="@+id/fragment_statistics_timespinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Dosage Graph"
+        android:id="@+id/fragment_statistics_dosagegrapghbutton"
+        android:layout_below="@+id/fragment_statistics_usagegrapghbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View ROA graph"
+        android:id="@+id/fragment_statistics_roagraphbutton"
+        android:layout_below="@+id/fragment_statistics_dosagegrapghbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Times dosed: "
+        android:id="@+id/textView11"
+        android:layout_below="@+id/fragment_statistics_roagraphbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Average dose: "
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total dosage: "
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Smallest dose: "
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Largest dose: "
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Most used ROA:"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="roaName"
+        android:id="@+id/text_mostused_roa"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_toRightOf="@+id/fragment_statistics_timespinner"
+        android:layout_alignRight="@+id/fragment_statistics_metricspinner"
+        android:layout_alignEnd="@+id/fragment_statistics_metricspinner"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x "
+        android:id="@+id/text_times_dosed"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/text_mostused_roa"
+        android:layout_alignStart="@+id/text_mostused_roa"
+        android:layout_alignRight="@+id/fragment_statistics_metricspinner"
+        android:layout_alignEnd="@+id/fragment_statistics_metricspinner"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x metricname"
+        android:id="@+id/text_most_used_drug_name"
+        android:layout_below="@+id/text_times_dosed"
+        android:layout_alignLeft="@+id/text_times_dosed"
+        android:layout_alignStart="@+id/text_times_dosed"
+        android:layout_alignRight="@+id/text_times_dosed"
+        android:layout_alignEnd="@+id/text_times_dosed"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x metricname"
+        android:id="@+id/text_total_dosage"
+        android:layout_below="@+id/text_most_used_drug_name"
+        android:layout_alignLeft="@+id/text_most_used_drug_name"
+        android:layout_alignStart="@+id/text_most_used_drug_name"
+        android:layout_alignRight="@+id/text_most_used_drug_name"
+        android:layout_alignEnd="@+id/text_most_used_drug_name"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x metricname"
+        android:id="@+id/text_smallest_dose"
+        android:layout_below="@+id/text_total_dosage"
+        android:layout_alignLeft="@+id/text_total_dosage"
+        android:layout_alignStart="@+id/text_total_dosage"
+        android:layout_alignRight="@+id/text_total_dosage"
+        android:layout_alignEnd="@+id/text_total_dosage"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x metricname"
+        android:id="@+id/text_largest_dose"
+        android:layout_below="@+id/text_smallest_dose"
+        android:layout_alignLeft="@+id/text_mostused_roa"
+        android:layout_alignStart="@+id/text_mostused_roa"
+        android:layout_alignRight="@+id/text_smallest_dose"
+        android:layout_alignEnd="@+id/text_smallest_dose"
+        android:singleLine="true" />
+
+</RelativeLayout>

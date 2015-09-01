@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lolbellum.druglog.AddDrug">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Drug"
+        android:id="@+id/button_edit_drug"
+        android:onClick="clickEditDrug"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_text_reddit_link" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_view_drug_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_drugdefault"
+        android:onClick="clickDrugImage" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_drug_name"
+        android:layout_below="@+id/image_view_drug_image"
+        android:layout_marginTop="10dp"
+        android:hint="Drug Name"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_drug_nickname"
+        android:hint="Drug Nickname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button_add_drug_nickname"
+        android:layout_toStartOf="@+id/button_add_drug_nickname"
+        android:layout_below="@+id/edit_text_drug_name"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add_drug_nickname"
+        android:src="@android:drawable/ic_input_add"
+        android:onClick="clickAddNickname"
+        android:layout_below="@+id/edit_text_drug_name"
+        android:layout_alignRight="@+id/edit_text_drug_name"
+        android:layout_alignEnd="@+id/edit_text_drug_name" />
+
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:text="No Nicknames Entered"
+        android:textSize="25sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_alignRight="@+id/button_add_drug_nickname"
+        android:layout_alignEnd="@+id/button_add_drug_nickname"
+        android:layout_below="@+id/button_add_drug_nickname" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/list_view_drug_nicknames"
+        android:layout_alignRight="@+id/button_add_drug_nickname"
+        android:layout_alignEnd="@+id/button_add_drug_nickname"
+        android:layout_below="@+id/button_add_drug_nickname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_text_erowid_link"
+        android:layout_below="@+id/emptyList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="Erowid Link" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_text_wiki_link"
+        android:layout_below="@+id/edit_text_erowid_link"
+        android:layout_centerHorizontal="true"
+        android:hint="Wikipedia Link" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_text_reddit_link"
+        android:layout_below="@+id/edit_text_wiki_link"
+        android:layout_centerHorizontal="true"
+        android:hint="Reddit Link" />
+
+</RelativeLayout>

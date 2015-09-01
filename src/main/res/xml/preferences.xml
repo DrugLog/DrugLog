@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="Passcode"
+    android:key="pref_key_passcode_Settings">
+    <CheckBoxPreference
+        android:key="pref_passcode_enabled"
+        android:title="Passcode Enabled" />
+    <Preference
+        android:key="pref_change_passcode"
+        android:title="Change passcode"/>
+        </PreferenceCategory>
+</PreferenceScreen>
+
+

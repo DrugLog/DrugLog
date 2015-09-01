@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_home" android:title="Start Page" app:showAsAction="never"
+        />
+    <item android:id="@+id/action_drugs" android:title="Drugs" app:showAsAction="never"
+        />
+    <item android:id="@+id/action_stash" android:title="Virtual Stash" app:showAsAction="never"
+        />
+    <item android:id="@+id/action_logs" android:title="Logs and Reports" app:showAsAction="never"
+        />
+    <item android:id="@+id/action_notifications" android:title = "Notifications and Warnings"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_calendar" android:title="Calendar" app:showAsAction="never"
+        />
+</menu>
