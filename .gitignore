@@ -5,7 +5,7 @@
 # files for the dex VM
 *.dex
 
-# Java class files
+ Java class files
 *.class
 
 # generated files
@@ -25,9 +25,9 @@ Thumbs.db
 .classpath
 .project
 
-# Android Studio
+ Android Studio
 *.iml
 .idea
-#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
 .gradle
 build/
