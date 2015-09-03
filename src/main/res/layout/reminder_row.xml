@@ -10,4 +10,4 @@
         android:id="@+id/text_reminder_info"
         android:layout_marginTop="10dp"
         android:text="Every x time for x time" />
-</LinearLayout>
+</LinearLayout>asd
